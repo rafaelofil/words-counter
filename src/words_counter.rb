@@ -1,5 +1,5 @@
-TEXT_FILE = "../rome-and-juliet.txt"
-REFERENCE_TEXT_FILE = "../hamlet.txt"
+TEXT_FILE = "<Path-your-file>"
+REFERENCE_TEXT_FILE = "<Path-file-will-want-to-exclude-some-words>"
 
 def words_from_file(text_file)
   File.read(text_file).downcase.gsub(/[^a-z]/, " ").split
