@@ -15,23 +15,35 @@ REFERENCE_TEXT_FILE = "<Path-file-will-want-to-exclude-some-words>"
 ```
 Replace the diamonds(<>) to the path of file on system to link with the project.
 
-``` ruby words_counter.rb ```
+``` 
+ruby words_counter.rb
+```
 # tricks
 It's possible make some cool things with return data like sorted, reverse and filter. Before, started REPL that you like, in this doc I demonstrated with standard ruby REPL.
 Type ```irb``` on CLI.
 Import your project:
-```require ("./src/words_counter.rb")```
+```
+require ("./src/words_counter.rb")
+```
 Wheter the CLI return ```true``` this mean success.
 Let's start ;)
 
 Sort:
-```WORDS_COUNT.sorted_by {|word, count| count}```
+```
+WORDS_COUNT.sorted_by {|word, count| count}
+```
 Reverse:
-```WORDS_COUNT.sorted_by {|word, count| count}.reverse```
+```
+WORDS_COUNT.sorted_by {|word, count| count}.reverse
+```
 Filter by 40 first's counters:
-```WORDS_COUNT.sorted_by {|word, count| count}[...40]```
+```
+WORDS_COUNT.sorted_by {|word, count| count}[...40]
+```
 Filter by 40 laste's counters:
-```WORDS_COUNT.sorted_by {|word, count| count}.reverse[...40]```
+```
+WORDS_COUNT.sorted_by {|word, count| count}.reverse[...40]
+```
 
 # conclusion
 Ruby is a great language to do amazing things with simple codes. I hope you enjoy!!!
